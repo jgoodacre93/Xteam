@@ -1,0 +1,21 @@
+[~] Username : Instagram
+[~] Full Name : Instagram
+[~] Biography : 
+[~] External Url : 
+[~] External Url Linkshimmed : None
+[~] Edge Followed By : 0
+[~] Edge Follow : 0
+[~] is Private : False
+[~] is Verified : False
+[~] Category Enum : None
+[~] Profile Pic Url Hd : 
+[~] Show Suggested Profiles : None
+[~] Show Follow Dialog : None
+[~] Show View Shop : None
+[~] Highlight Reel Count : None
+[~] Edge Felix Video Timeline : None
+[~] Edge Owner To Timeline Media : None
+[~] Has Clips : None
+[~] Has Guides : None
+[~] Has Ar Effects : None
+[~] Has Channel : None

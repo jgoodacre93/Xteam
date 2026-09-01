@@ -1,0 +1,41 @@
+<!--
+  Xteam - generic landing page (file download)
+  Gophish template variables:
+    {{.URL}}      -> per-recipient tracked campaign URL
+    {{.Tracker}}  -> tracking pixel
+  Customize the look to match your (authorized) test scenario.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secure Document Portal</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#eef2f7;display:flex;
+       align-items:center;justify-content:center;height:100vh;margin:0}
+  .card{background:#fff;padding:36px;border-radius:10px;width:380px;
+        box-shadow:0 4px 20px rgba(0,0,0,.08);text-align:center}
+  .icon{font-size:44px;margin-bottom:8px}
+  h2{margin:0 0 6px;color:#16213e;font-size:20px}
+  .sub{color:#666;font-size:13px;margin:0 0 20px}
+  .file{background:#f7f9fc;border:1px solid #e3e8f0;border-radius:8px;
+        padding:14px;font-size:14px;color:#333;margin-bottom:18px}
+  a.btn{display:inline-block;background:#1b2a4a;color:#fff;text-decoration:none;
+        padding:12px 28px;border-radius:6px;font-size:15px}
+  a.btn:hover{background:#2b3f6a}
+  .note{font-size:11px;color:#999;margin-top:18px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">&#128196;</div>
+    <h2>Document ready to download</h2>
+    <p class="sub">A new document has been shared with you.</p>
+    <div class="file">&#128196; report_2026.pdf &nbsp;&middot;&nbsp; 1.2 MB</div>
+    <a class="btn" href="{{.URL}}">Download document</a>
+    <p class="note">Simulated page for authorized security testing.</p>
+  </div>
+  <img src="{{.Tracker}}" width="1" height="1" alt="">
+</body>
+</html>

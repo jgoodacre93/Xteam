@@ -1,0 +1,36 @@
+[~] Username : u
+[~] Full Name : U
+[~] Biography : b
+[~] External Url : None
+[~] External Url Linkshimmed : None
+[~] Edge Followed By : 1
+[~] Edge Follow : 1
+[~] is Private : False
+[~] is Verified : False
+[~] Category Enum : None
+[~] Profile Pic Url Hd : x
+[~] Show Suggested Profiles : None
+[~] Show Follow Dialog : None
+[~] Show View Shop : None
+[~] Highlight Reel Count : None
+[~] Edge Felix Video Timeline : 0
+[~] Edge Owner To Timeline Media : 1
+[~] Has Clips : None
+[~] Has Guides : None
+[~] Has Ar Effects : None
+[~] Has Channel : None
+[~] id : 1
+[~] is Joined Recently : None
+[~] Has Public Story : False
+[~] is Live Now : False
+[~] Overall Category Name : None
+[~] Category Name : None
+[~] is Business Account : False
+[~] Should Show Category : None
+[~] Business Category Name : None
+[~] Country Block : None
+[~] Toast Content On Load : None
+[~] Profile Pic Edit Sync Props : None
+[~] Loggin Page Id : None
+[~] Fbid : None
+[~] Connected Fb Page : None

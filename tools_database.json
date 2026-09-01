@@ -1,0 +1,111 @@
+{
+    "tools": [
+        {
+            "tool_name": "nmap",
+            "category": "Network Scanning",
+            "description": "Network mapper and port scanner. Used for host discovery, port scanning, service/version detection, and OS fingerprinting.",
+            "keywords": ["scan", "port", "network", "host", "discovery", "mapper", "nmap", "enumeration", "reconnaissance", "services", "os fingerprint"],
+            "command": "nmap -sV -sC -oA scan <target>"
+        },
+        {
+            "tool_name": "nikto",
+            "category": "Web Vulnerability Scanner",
+            "description": "Open-source web server scanner. Tests for dangerous files, outdated server software, and version-specific problems.",
+            "keywords": ["web", "scan", "vulnerability", "server", "nikto", "cgi", "outdated", "dangerous files", "web scan"],
+            "command": "nikto -h <url>"
+        },
+        {
+            "tool_name": "theHarvester",
+            "category": "OSINT / Email Harvesting",
+            "description": "Gathers email accounts, subdomain names, hosts, employee names, open ports, and banners from public sources.",
+            "keywords": ["email", "harvest", "osint", "subdomain", "theharvester", "recon", "employees", "passive", "google", "bing", "linkedin"],
+            "command": "theHarvester -d <domain> -b google,bing,linkedin -l 100"
+        },
+        {
+            "tool_name": "nuclei",
+            "category": "Web Vulnerability Scanner",
+            "description": "Fast, template-based vulnerability scanner. Uses YAML templates to detect CVEs, misconfigurations, and exposed panels.",
+            "keywords": ["nuclei", "cve", "template", "web", "vulnerability", "misconfiguration", "exposed", "panel", "scan", "critical", "high"],
+            "command": "nuclei -t nuclei-templates/ -u <url> -severity critical,high"
+        },
+        {
+            "tool_name": "secretsdump",
+            "category": "Post-Exploitation",
+            "description": "Impacket tool to dump SAM/SECURITY/SYSTEM hives and extract NTLM hashes from a remote Windows machine.",
+            "keywords": ["secretsdump", "hash", "sam", "ntlm", "windows", "dump", "credentials", "post", "exploitation", "remote", "impacket"],
+            "command": "secretsdump <domain>/<user>:<pass>@<target_ip>"
+        },
+        {
+            "tool_name": "psexec",
+            "category": "Post-Exploitation",
+            "description": "Impacket tool to execute commands on a remote Windows host using SMB and create an interactive shell.",
+            "keywords": ["psexec", "execute", "command", "remote", "windows", "smb", "shell", "interactive", "post", "exploitation", "impacket"],
+            "command": "psexec <domain>/<user>:<pass>@<target_ip> <command>"
+        },
+        {
+            "tool_name": "wmiexec",
+            "category": "Post-Exploitation",
+            "description": "Impacket tool for WMI-based command execution on remote Windows hosts. Stealthier than psexec as it does not drop a binary.",
+            "keywords": ["wmiexec", "wmi", "execute", "command", "remote", "windows", "stealth", "post", "exploitation", "impacket"],
+            "command": "wmiexec <domain>/<user>:<pass>@<target_ip> <command>"
+        },
+        {
+            "tool_name": "airgeddon",
+            "category": "Wireless Attacks",
+            "description": "Multi-use bash script for auditing wireless networks. Supports WPA2 WPS attacks, Evil Twin, and handshake capture.",
+            "keywords": ["wireless", "wifi", "airgeddon", "wpa2", "wps", "handshake", "evil twin", "deauth", "wireless audit", "802.11"],
+            "command": "sudo bash airgeddon.sh"
+        },
+        {
+            "tool_name": "wifite2",
+            "category": "Wireless Attacks",
+            "description": "Wifite2 is the actively maintained, Python 3 successor to wifite. Automated wireless attack tool that captures WPA handshakes, performs WPS and PMKID attacks on multiple networks.",
+            "keywords": ["wifite", "wifite2", "wireless", "wifi", "wpa", "wps", "pmkid", "handshake", "automated", "deauth", "802.11"],
+            "command": "bash Wireless_attacks/start.sh"
+        },
+        {
+            "tool_name": "evilginx2",
+            "category": "Phishing / 2FA Bypass",
+            "description": "Man-in-the-middle phishing framework. Bypasses 2FA by proxying legitimate login pages and capturing session cookies.",
+            "keywords": ["evilginx", "phishing", "2fa", "bypass", "mitm", "proxy", "session", "cookies", "credential", "fake", "login"],
+            "command": "evilginx -p <phishlets_dir> -d <domain> -i <vps_ip> -p <port>"
+        },
+        {
+            "tool_name": "zphisher",
+            "category": "Phishing",
+            "description": "Automated phishing tool with templates for 30+ sites including social media, banks, and cloud providers.",
+            "keywords": ["zphisher", "phishing", "template", "fake", "login", "credential", "social media", "bank", "automated"],
+            "command": "bash zphisher.sh"
+        },
+        {
+            "tool_name": "Instagram OSINT",
+            "category": "OSINT / Social Media",
+            "description": "Scrapes Instagram profiles for user data including followers, following, biography, story status, and post analytics.",
+            "keywords": ["instagram", "osint", "social media", "profile", "followers", "story", "post", "bio", "user data"],
+            "command": "python3 Ig_information_gathering.py"
+        },
+        {
+            "tool_name": "CiLocks",
+            "category": "Android / Lock Screen",
+            "description": "Android lock screen bypass tool for testing ADB and recovery mode vulnerabilities on Android devices.",
+            "keywords": ["android", "lock", "screen", "bypass", "cilocks", "adb", "recovery", "mobile", "device"],
+            "command": "sudo ./cilocks"
+        }
+    ],
+    "fallback_tools": [
+        {
+            "tool_name": "nmap",
+            "category": "General Purpose",
+            "description": "A solid starting point for any engagement. Run an intensive TCP/UDP scan to discover open ports and services.",
+            "keywords": ["general", "start", "recommend", "default", "any", "everything"],
+            "command": "nmap -sV -sC -p- <target>"
+        },
+        {
+            "tool_name": "nikto",
+            "category": "General Purpose",
+            "description": "Classic web server scanner. Great for quickly identifying common misconfigurations and known vulnerable software.",
+            "keywords": ["general", "start", "recommend", "default", "any", "everything"],
+            "command": "nikto -h <url>"
+        }
+    ]
+}

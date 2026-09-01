@@ -1,0 +1,29 @@
+services:
+  xteam:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xteam
+    hostname: xteam
+    volumes:
+      - ./reports:/home/xteam_user/Xteam/reports
+      - ./Email_harvester/reports:/home/xteam_user/Xteam/Email_harvester/reports
+      - ./Web_Vulnerability_Scanner/vulnerability_reports:/home/xteam_user/Xteam/Web_Vulnerability_Scanner/vulnerability_reports
+      - ./Phish_2FA/reports:/home/xteam_user/Xteam/Phish_2FA/reports
+      - ./evilginx_config:/home/xteam_user/Xteam/Phish_2FA
+    ports:
+      - "3333:3333"
+      - "443:443"
+    environment:
+      - TERM=xterm-256color
+    stdin_open: true
+    tty: true
+    # Required for wireless attacks (airgeddon) and raw sockets
+    # Uncomment only if your host supports privileged containers
+    # privileged: true
+    # cap_add:
+    #   - NET_ADMIN
+    #   - NET_RAW
+
+volumes:
+  evilginx_config:

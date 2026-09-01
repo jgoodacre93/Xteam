@@ -1,0 +1,111 @@
+{
+    "tools": [
+        {
+            "name": "python3",
+            "apt": "python3",
+            "pkg": "python",
+            "type": "binary"
+        },
+        {
+            "name": "git",
+            "apt": "git",
+            "pkg": "git",
+            "type": "binary"
+        },
+        {
+            "name": "nmap",
+            "apt": "nmap",
+            "pkg": "nmap",
+            "type": "binary"
+        },
+        {
+            "name": "theharvester",
+            "apt": "theharvester",
+            "pkg": null,
+            "type": "binary"
+        },
+        {
+            "name": "go",
+            "apt": "golang-go",
+            "pkg": "golang",
+            "type": "binary"
+        },
+        {
+            "name": "tmux",
+            "apt": "tmux",
+            "pkg": "tmux",
+            "type": "binary"
+        },
+        {
+            "name": "gcc",
+            "apt": "gcc",
+            "pkg": "gcc",
+            "type": "binary"
+        },
+        {
+            "name": "make",
+            "apt": "make",
+            "pkg": "make",
+            "type": "binary"
+        },
+        {
+            "name": "wget",
+            "apt": "wget",
+            "pkg": "wget",
+            "type": "binary"
+        },
+        {
+            "name": "curl",
+            "apt": "curl",
+            "pkg": "curl",
+            "type": "binary"
+        },
+        {
+            "name": "figlet",
+            "apt": "figlet",
+            "pkg": "figlet",
+            "type": "binary"
+        },
+        {
+            "name": "lolcat",
+            "apt": "lolcat",
+            "pkg": "lolcat",
+            "type": "binary"
+        },
+        {
+            "name": "airgeddon",
+            "apt": null,
+            "pkg": null,
+            "type": "git",
+            "url": "https://github.com/v1s1t0r1sh3r3/airgeddon.git"
+        },
+        {
+            "name": "zphisher",
+            "apt": null,
+            "pkg": null,
+            "type": "git",
+            "url": "https://github.com/htr-tech/zphisher.git"
+        },
+        {
+            "name": "CiLocks",
+            "apt": null,
+            "pkg": null,
+            "type": "git",
+            "url": "https://github.com/tegal1337/CiLocks.git"
+        },
+        {
+            "name": "evilginx2",
+            "apt": null,
+            "pkg": null,
+            "type": "custom",
+            "handler": "install_evilginx2"
+        },
+        {
+            "name": "nuclei",
+            "apt": null,
+            "pkg": null,
+            "type": "custom",
+            "handler": "install_nuclei"
+        }
+    ]
+}

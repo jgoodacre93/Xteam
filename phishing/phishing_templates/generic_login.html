@@ -1,0 +1,45 @@
+<!--
+  Xteam - generic landing page (login)
+  Gophish template variables:
+    {{.URL}}      -> per-recipient tracked campaign URL
+    {{.Tracker}}  -> tracking pixel
+  Customize the look to match your (authorized) test scenario.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Sign In</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#f2f4f8;display:flex;
+       align-items:center;justify-content:center;height:100vh;margin:0}
+  .card{background:#fff;padding:32px;border-radius:8px;width:340px;
+        box-shadow:0 4px 20px rgba(0,0,0,.08)}
+  h2{margin:0 0 4px;color:#1a1a2e;font-size:20px}
+  .sub{color:#666;margin:0 0 20px;font-size:13px}
+  label{font-size:13px;color:#333;display:block;margin:12px 0 4px}
+  input{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;
+        box-sizing:border-box;font-size:14px}
+  button{width:100%;margin-top:18px;padding:11px;background:#1a1a2e;color:#fff;
+         border:0;border-radius:6px;font-size:15px;cursor:pointer}
+  button:hover{background:#2b2b4a}
+  .note{font-size:11px;color:#999;margin-top:16px;text-align:center}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>Sign in to your account</h2>
+    <p class="sub">Please verify your account details to continue.</p>
+    <form method="post" action="{{.URL}}">
+      <label>Email address</label>
+      <input type="text" name="username" placeholder="you@example.com" autocomplete="off" required>
+      <label>Password</label>
+      <input type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+      <button type="submit">Sign in</button>
+    </form>
+    <p class="note">Simulated login page for authorized security testing.</p>
+  </div>
+  <img src="{{.Tracker}}" width="1" height="1" alt="">
+</body>
+</html>
